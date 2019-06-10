@@ -10,7 +10,7 @@ def eval_genomes(genomes, config):
     flappy = FlappyBirdApp(genomes, config)
     flappy.play()
     results = flappy.crash_info
-    top_score = 0
+
     for result, genomes in results:
 
         score = result['score']
@@ -18,9 +18,6 @@ def eval_genomes(genomes, config):
         energy = result['energy']
 
         genomes.fitness = (1000*score + 0.2*distance - 1.5*energy)/1000
-#        genomes.fitness = -99999 if fitness <= 0 else fitness/1000
-        if top_score < score:
-            top_score = score
     print('The top score was', score, 'with a distance of', distance, 'and', energy, 'energy used.')
 
 
