@@ -4,23 +4,6 @@ import sys
 from FlapPyBird.flappy import FlappyBirdApp
 
 
-def eval_genomes(genomes, config):
-    idx, genomes = zip(*genomes)
-
-    flappy = FlappyBirdApp(genomes, config)
-    flappy.play()
-    results = flappy.crash_info
-
-    for result, genomes in results:
-
-        score = result['score']
-        distance = result['distance']
-        energy = result['energy']
-
-        genomes.fitness = (1000*score + 0.2*distance - 1.5*energy)/1000
-    print('The top score was', score, 'with a distance of', distance, 'and', energy, 'energy used.')
-
-
 # Driver for NEAT solution to FlapPyBird
 def evolutionary_driver():
     config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
@@ -39,12 +22,30 @@ def evolutionary_driver():
     # Save the winner.
     pickle.dump(winner, open('winner.pkl', 'wb'))
 
-#    print('\nBest genome:\n{!s}'.format(winner))
+    print('\nBest genome:\n{!s}'.format(winner))
+
+
+def eval_genomes(genomes, config):
+    global score, distance, energy
+    idx, genomes = zip(*genomes)
+
+    flappy = FlappyBirdApp(genomes, config)
+    flappy.play()
+    results = flappy.crash_info
+
+    for result, genomes in results:
+
+        score = result['score']
+        distance = result['distance']
+        energy = result['energy']
+
+        genomes.fitness = (1000*score + 0.2*distance - 1.5*energy)/1000
+    print('The top score was', score, 'with a distance of', distance, 'and', energy, 'energy used.')
 
 
 def main():
     if len(sys.argv) > 1:
-        evolutionary_driver(int(sys.argv[1]))
+        evolutionary_driver()
     else:
         evolutionary_driver()
 

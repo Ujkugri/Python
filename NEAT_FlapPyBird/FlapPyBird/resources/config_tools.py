@@ -2,6 +2,7 @@ from FlapPyBird.resources.config import *
 import pygame, random
 from itertools import cycle
 
+
 def load_images():
     # numbers sprites for score display
     IMAGES['numbers'] = tuple([pygame.image.load('FlapPyBird/assets/sprites/{}.png'.format(x)).convert_alpha() for x in range(10)])
@@ -13,14 +14,12 @@ def load_images():
         IMAGES[sprite] = pygame.image.load('FlapPyBird/assets/sprites/{}.png'.format(sprite)).convert_alpha()
 
 
-
 def load_sounds():
     if SOUND_ON:
         soundExt = '.wav' if 'win' in sys.platform else '.ogg'
         sound_list = ["die", "hit", "point", "swoosh", "wing"]
         for sound in sound_list:
             SOUNDS[sound] = pygame.mixer.Sound('FlapPyBird/assets/audio/{}'.format(sound) + soundExt)
-
 
 
 def initialize_random_sprites():
@@ -42,8 +41,6 @@ def initialize_random_sprites():
         pygame.image.load(PIPES_LIST[pipeindex]).convert_alpha(),
     )
 
-    
-
 
 def initialize_hitmasks():
     # hismask for pipes
@@ -64,6 +61,7 @@ def getHitmask(image):
         for y in range(image.get_height()):
             mask[x].append(bool(image.get_at((x,y))[3]))
     return mask
+
 
 def initialize_movement_info():
     """Shows welcome screen animation of flappy bird"""

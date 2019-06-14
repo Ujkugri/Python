@@ -1,6 +1,6 @@
 import neat
 from FlapPyBird.resources.config import *
-import pygame, random
+import pygame, random, time
 
 class Bird(object):
     def __init__(self, player_index_gen, genome, config):
@@ -13,6 +13,7 @@ class Bird(object):
 
         self.index = 0
         self.distance = 0
+        self.time = 6000000
 
         """ SET BIRD PARAMETERS """
         self.y_velocity    =  -9   # player's velocity along Y, default same as playerFlapped
@@ -26,11 +27,10 @@ class Bird(object):
         self.pipe_collision = False
         self.collision = False
         self.flapped = False
-
+        self.time_collision = False
 
     def next(self):
         self.index = next(self.playerIndexGen)
-
 
     def flap_decision(self, pipes):
 
@@ -55,7 +55,6 @@ class Bird(object):
                 self.flapped = True
                 self.energy_used += 10
                 SOUNDS['wing'].play() if SOUND_ON else None
-
 
     def move(self):
         if self.y_velocity < self.max_y_velocity and not self.flapped:
@@ -83,12 +82,9 @@ class Bird(object):
         else:
             return False
 
-
     def check_collision(self, pipes):
-        """returns True if player collders with base or pipes."""
-        player = {}
-        player['w'] = IMAGES['player'][0].get_width()
-        player['h'] = IMAGES['player'][0].get_height()
+        """returns True if player collides with base or pipes."""
+        player = {'w': IMAGES['player'][0].get_width(), 'h': IMAGES['player'][0].get_height()}
 
         # if player crashes into ground
         if self.y + player['h'] >= BASEY - 1:
@@ -116,9 +112,12 @@ class Bird(object):
                 if uCollide or lCollide:
                     self.pipe_collision = True
 
-        if self.ground_collision or self.pipe_collision:
-            self.collision = True
+        self.time -= 1
+        if self.time <= 0:
+            self.time_collision = True
 
+        if self.ground_collision or self.pipe_collision or self.time_collision:
+            self.collision = True
 
     def pixelCollision(self, rect1, rect2, hitmask1, hitmask2):
         """Checks if two objects collide and not just their rects"""

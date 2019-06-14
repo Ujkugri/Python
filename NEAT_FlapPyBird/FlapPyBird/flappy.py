@@ -39,15 +39,15 @@ class FlappyBirdApp(object):
         while True:
             for event in pygame.event.get():
                 if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE):
+
                     pygame.quit()
                     sys.exit()
+
 
             if self.on_loop():
                 return
             else:
                 self.on_render()
-
-
 
     def on_loop(self):
 
@@ -58,11 +58,10 @@ class FlappyBirdApp(object):
             bird.flap_decision(self.pipes)
         # =========----==========================================================
 
-
-
         # =========----==========================================================
         """ CHECK CRASH """
         # =========----==========================================================
+
         for index, bird in enumerate(self.birds):
             if bird.check_crash(self.pipes, self.base.basex, self.score):
                 self.crash_info.append((bird.crashInfo, bird.genome))

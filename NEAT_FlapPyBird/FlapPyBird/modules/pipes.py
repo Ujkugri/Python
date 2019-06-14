@@ -19,7 +19,6 @@ class Pipe(object):
         self.y_upper = pipeY_upper
         self.y_lower = pipeY_lower
 
-
     def move_left(self):
         self.x += self.x_velocity
 
@@ -28,8 +27,6 @@ class Pipe(object):
 
     def get_lower(self):
         return {'x': self.x, 'y': self.y_lower}
-
-
 
 class Pipes(object):
     def __init__(self, pipe1, pipe2):
@@ -60,7 +57,6 @@ class Pipes(object):
         # remove first pipe if its out of the screen
         if self.upper[0]['x'] < -IMAGES['pipe'][0].get_width():
             self.remove()
-
 
     def add(self, new_pipe):
         """ ADD NEW PIPE """
