@@ -1,10 +1,8 @@
 import tkinter as tk
-from tkinter import messagebox
-from tkinter import filedialog
 import youtube_dl
 
 
-def downloadVid(Entries):
+def downloadMP3(Entries):
     for Entry in Entries:
         string = Entry[1].get()
 
@@ -13,10 +11,26 @@ def downloadVid(Entries):
             'postprocessors': [{
                 'key': 'FFmpegExtractAudio',
                 'preferredcodec': 'mp3',
-                'preferredquality': '320',
             }],
             # Download path
             'outtmpl': 'C:/Users/Gentian/Music/%(title)s.%(ext)s'
+        }
+        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([string])
+
+
+def downloadVid(Entries):
+    for Entry in Entries:
+        string = Entry[1].get()
+
+        ydl_opts = {
+            'format': 'bestvideo[height<=480]+bestaudio/best[height<=480]',
+            'postprocessors': [{
+                'key': 'FFmpegVideoConvertor',
+                'preferedformat': 'mp4',  # one of avi, flv, mkv,mp4, ogg, webm #
+            }],
+            # Download path
+            'outtmpl': 'C:/Users/Gentian/Videos/%(title)s.%(ext)s'
         }
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             ydl.download([string])
@@ -39,12 +53,13 @@ if __name__ == '__main__':
     root = tk.Tk()
     ents = GUI()
 
-    b1 = tk.Button(root, text="Download", fg="red", command=(lambda e=ents: downloadVid(e)))
+    b1 = tk.Button(root, text="Download MP3", command=(lambda e=ents: downloadMP3(e)))
     b1.pack(side=tk.LEFT, padx=5, pady=5)
 
-    b2 = tk.Button(root, text='Quit', command=root.quit)
+    b2 = tk.Button(root, text="Download MP4", command=(lambda e=ents: downloadVid(e)))
     b2.pack(side=tk.LEFT, padx=5, pady=5)
 
+    b3 = tk.Button(root, text='Quit', command=root.quit)
+    b3.pack(side=tk.LEFT, padx=5, pady=5)
+
     root.mainloop()
-    root.filename = tk.filedialog.asksaveasfilename(initialdir="/", title="Select file",
-                                                    filetypes=(("jpeg files", "*.jpg"), ("all files", "*.*")))
