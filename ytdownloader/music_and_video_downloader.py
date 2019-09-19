@@ -23,9 +23,6 @@ class DownloaderGUI:
         self.close_button = Button(master, text="Close", command=master.quit)
         self.close_button.grid(row=1, column=1, padx=5, pady=5, sticky=tk.W + tk.E)
 
-        #        b2 = tk.Button(root, text="Download MP4", command=(lambda e=ents: downloadVid(e)))
-        #        b2.pack(side=tk.LEFT, padx=5, pady=5)
-
         self.download_mp3 = tk.Button(root, text="Download MP3", command=(lambda: downloadMP3(self.Entries)))
         self.download_mp3.grid(row=(100 + 4), column=0, padx=5, pady=5, sticky=tk.W + tk.E)
 
@@ -70,7 +67,7 @@ def downloadVid(Entries):
             'format': 'bestvideo+bestaudio/best',
             'postprocessors': [{
                 'key': 'FFmpegVideoConvertor',
-                'preferedformat': 'mp4',  # one of avi, flv, mkv,mp4, ogg, webm #
+                'preferedformat': 'mp4',  # one of avi, flv, mkv, mp4, ogg, webm #
             }],
             # Download path
             'outtmpl': 'C:/Users/Gentian/Videos/%(title)s.%(ext)s'
