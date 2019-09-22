@@ -1,13 +1,9 @@
-"""Simulate the Monty Hall problem.
-
-"""
-
 import random
 import matplotlib.pyplot as plt
 
 
-def simulate(num_doors, switch):
-    """(int, bool): bool
+def simulate(num_doors, open_doors, switch):
+    """(int, int): bool
 
     Carry out the game for one contestant.  If 'switch' is True,
     the contestant will switch their chosen door when offered the chance.
@@ -20,8 +16,6 @@ def simulate(num_doors, switch):
     choice = random.randint(0, num_doors-1)
     # The host opens all but two doors.
     closed_doors = list(range(num_doors))
-
-    open_doors = 3
 
     while len(closed_doors) > open_doors:
         # Randomly choose a door to open.
@@ -42,7 +36,7 @@ def simulate(num_doors, switch):
     if switch:
         # There are two closed doors left.  The contestant will never
         # choose the same door, so we'll remove that door as a choice.
-        available_doors = list(closed_doors) # Make a copy of the list.
+        available_doors = list(closed_doors)  # Make a copy of the list.
         available_doors.remove(choice)
 
         # Change choice to the only door available.
@@ -55,44 +49,41 @@ def simulate(num_doors, switch):
 
 def main():
     # Carry out the trials
-    x_axe = []
     y_axe_switch = []
     y_axe_stay = []
     winning_non_switchers = 0
     winning_switchers = 0
-    counter = 0
-    num_doors = 4
-    trials = 100000
+    num_doors = 400000
+    open_doors = 2
+    trials = 1000
 
     print('Simulating {} trials...'.format(trials))
     for i in range(trials):
-        counter += 1
+
         # First, do a trial where the contestant never switches.
-        won = simulate(num_doors, switch=False)
+        won = simulate(num_doors, open_doors, switch=False)
         if won:
             winning_non_switchers += 1
-        y_axe_stay.append(winning_non_switchers / counter)
+        y_axe_stay.append(winning_non_switchers / (int(i)+1))
 
         # Next, try one where the contestant switches.
-        won = simulate(num_doors, switch=True)
+        won = simulate(num_doors, open_doors, switch=True)
         if won:
             winning_switchers += 1
-        y_axe_switch.append(winning_switchers / counter)
-        x_axe.append(counter)
+        y_axe_switch.append(winning_switchers / (int(i)+1))
 
-    print('    Switching won {0:5} times out of {1} ({2}% of the time)'.format(
+    print('Switching won {0:5} times out of {1} ({2}% of the time)'.format(
             winning_switchers, 100,
-            (winning_switchers / trials * 100 ) ))
+            (winning_switchers / trials * 100)))
     print('Not switching won {0:5} times out of {1} ({2}% of the time)'.format(
             winning_non_switchers, 100,
-            (winning_non_switchers / trials * 100 ) ))
+            (winning_non_switchers / trials * 100)))
 
-
-
-    plt.plot(x_axe, y_axe_switch, y_axe_stay)
+    plt.plot(range(trials), y_axe_switch, y_axe_stay)
     plt.ylabel('Erfolgswahrscheinlichkeit')
     plt.xlabel('Anzahl Simulationen')
     plt.show()
+
 
 if __name__ == '__main__':
     main()
