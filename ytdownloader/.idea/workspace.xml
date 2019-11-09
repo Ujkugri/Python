@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73680844-6147-4f39-a025-578481a60fbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../NEAT_FlapPyBird/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NEAT_FlapPyBird/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NEAT_FlapPyBird/FlapPyBird/flappy.py" beforeDir="false" afterPath="$PROJECT_DIR$/../NEAT_FlapPyBird/FlapPyBird/flappy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Montyproblem/Montyproblem.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Montyproblem/Montyproblem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/music_and_video_downloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/music_and_video_downloader.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

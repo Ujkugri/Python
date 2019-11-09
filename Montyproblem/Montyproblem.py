@@ -14,7 +14,7 @@ def simulate(num_doors, open_doors, switch):
     winning_door = random.randint(0, num_doors-1)
     # The contestant picks a random door, too.
     choice = random.randint(0, num_doors-1)
-    # The host opens all but two doors.
+    # The host opens all but open_doors doors.
     closed_doors = list(range(num_doors))
 
     while len(closed_doors) > open_doors:
@@ -29,12 +29,12 @@ def simulate(num_doors, open_doors, switch):
         # Remove the door from the list of closed doors.
         closed_doors.remove(door_to_remove)
 
-    # There are always two doors remaining.
+    # There are always open_doors doors remaining.
     assert len(closed_doors) == open_doors
 
     # Does the contestant want to switch their choice?
     if switch:
-        # There are two closed doors left.  The contestant will never
+        # There are open_doors closed doors left.  The contestant will never
         # choose the same door, so we'll remove that door as a choice.
         available_doors = list(closed_doors)  # Make a copy of the list.
         available_doors.remove(choice)
@@ -53,9 +53,12 @@ def main():
     y_axe_stay = []
     winning_non_switchers = 0
     winning_switchers = 0
-    num_doors = 400000
-    open_doors = 2
-    trials = 1000
+
+# Important Parameters #
+    num_doors = 5
+    open_doors = 3
+    trials = 1000000
+#
 
     print('Simulating {} trials...'.format(trials))
     for i in range(trials):
@@ -73,10 +76,10 @@ def main():
         y_axe_switch.append(winning_switchers / (int(i)+1))
 
     print('Switching won {0:5} times out of {1} ({2}% of the time)'.format(
-            winning_switchers, 100,
+            winning_switchers, trials,
             (winning_switchers / trials * 100)))
     print('Not switching won {0:5} times out of {1} ({2}% of the time)'.format(
-            winning_non_switchers, 100,
+            winning_non_switchers, trials,
             (winning_non_switchers / trials * 100)))
 
     plt.plot(range(trials), y_axe_switch, y_axe_stay)
