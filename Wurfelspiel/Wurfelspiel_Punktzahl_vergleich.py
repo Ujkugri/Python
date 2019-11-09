@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import collections
 
 
 def dice(number_of_points):
@@ -22,18 +21,21 @@ def dice(number_of_points):
 
 
 if __name__ == '__main__':
-    number_of_points = 20  # Number of minimum points
-    number_of_simulation = 100  # Number of Simulations
-    sim = np.array([dice(number_of_points) for i in range(number_of_simulation)])
-    number_of_losses = collections.Counter(sim)[0]
-    average = np.sum(sim)/number_of_simulation
-    print(sim)
-    print(number_of_losses)
+    avg = []
+    number_of_max_points = 150
+    for n in range(1, number_of_max_points+1):
+        number_of_throws = n  # Number of Throws
+        number_of_simulation = 1000000  # Number of Simulations
+        sim = np.array([dice(number_of_throws) for i in range(number_of_simulation)])
+        average = np.sum(sim)/number_of_simulation
+        avg.append(average)
 
     with plt.style.context('seaborn'):
-        plt.hist(sim,
-                 bins=4*number_of_points,
-                 color='#1b4f72',
+        plt.plot(avg,
+                 color='#dc7633',
+                 linestyle='dashed',
+                 marker='d',
+                 markerfacecolor='#3498db',
                  label='Verteilung der Gesamtpuntzahlen')  # Limit for View is at bins=10^4!
 
         plt.legend(loc='upper right',
@@ -42,18 +44,17 @@ if __name__ == '__main__':
                    fancybox=True,
                    shadow=True,
                    facecolor='white')  # location of legend upper right (best option)
-        plt.title('Es wurde zu '
-                  + str(number_of_losses/(number_of_simulation/100))
-                  + '% das Spiel verloren. \n Dabei wurde eine durchschnittliche Punktzahl von '
-                  + str(average)
-                  + ' Punkten erreicht.',
+        plt.title('Der maximale erreichte Durschschnittspunktzahl liegt '
+                  + str(np.amax(avg))
+                  + ' Punkten. \n Dies ist bei der Stoppunktzahl von '
+                  + str(avg.index(np.amax(avg)))
+                  + ' Punkten erreicht worden.',
                   size=25,
                   weight='bold')
         plt.tick_params(labelsize=20)
-        plt.ylim(0, number_of_losses * 1.1)
-        plt.xlim(0, number_of_points + 7)
+        plt.yticks(np.arange(0, 12, 1))
 
-        plt.xlabel('Gesamtpunktzahl', fontsize=25, fontweight='bold')
+        plt.xlabel('Stoppunktzahl', fontsize=25, fontweight='bold')
         plt.ylabel('Häufigkeit', fontsize=25, fontweight='bold')
     plt.grid(True)
     plt.show()

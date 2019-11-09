@@ -1,0 +1,10 @@
+import sys
+import subprocess
+from pynput.keyboard import Key, Controller
+
+keyboard = Controller()
+
+
+## Öffne Super Mario World
+game = subprocess.Popen([r'C:\Users\Gentian\Desktop\BizHawk-2.3\\EmuHawk.exe', 'Super Mario World.smc'])
+
