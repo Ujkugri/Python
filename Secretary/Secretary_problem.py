@@ -19,8 +19,8 @@ def find_k_opt(N):
 
 if __name__ == '__main__':
     N = 100  # Number of Candidates
-    sim = np.array([find_k_opt(i) for i in range(1, N+1)])
-    opt = np.array([i/np.e for i in range(1, N+1)])
+    sim = np.array([find_k_opt(i) for i in range(1, N+2)])
+    opt = np.array([i/np.e for i in range(1, N+2)])
 
     with plt.style.context(('seaborn')):
         simplot = plt.plot(sim, label='ermitteltes k$_{opt}$', color='#3498db')
@@ -34,6 +34,6 @@ if __name__ == '__main__':
                    facecolor='white')  # location of legend upper left (best option)
         plt.tick_params(labelsize=25)
         plt.xlabel('Ausgewählter Kandidat', fontsize=25, fontweight='bold')
-        plt.ylabel('Häufigkeit', fontsize=25, fontweight='bold')
+        plt.ylabel('Errechnetes k$_{opt}$', fontsize=25, fontweight='bold')
     plt.grid(True)
     plt.show()

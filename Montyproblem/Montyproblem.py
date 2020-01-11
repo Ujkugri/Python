@@ -57,7 +57,7 @@ def main():
 # Important Parameters #
     num_doors = 5
     open_doors = 3
-    trials = 1000000
+    trials = 100000
 #
 
     print('Simulating {} trials...'.format(trials))
@@ -67,13 +67,13 @@ def main():
         won = simulate(num_doors, open_doors, switch=False)
         if won:
             winning_non_switchers += 1
-        y_axe_stay.append(winning_non_switchers / (int(i)+1))
+        y_axe_stay.append(winning_non_switchers / (int(i)+1)*100)
 
         # Next, try one where the contestant switches.
         won = simulate(num_doors, open_doors, switch=True)
         if won:
             winning_switchers += 1
-        y_axe_switch.append(winning_switchers / (int(i)+1))
+        y_axe_switch.append(winning_switchers / (int(i)+1)*100)
 
     print('Switching won {0:5} times out of {1} ({2}% of the time)'.format(
             winning_switchers, trials,
@@ -82,9 +82,25 @@ def main():
             winning_non_switchers, trials,
             (winning_non_switchers / trials * 100)))
 
-    plt.plot(range(trials), y_axe_switch, y_axe_stay)
-    plt.ylabel('Erfolgswahrscheinlichkeit')
-    plt.xlabel('Anzahl Simulationen')
+    with plt.style.context('seaborn'):
+        plt.plot(range(trials), y_axe_switch, label='Erfolgswahrscheinlichkeit beim wechsel: {:0.2f}%'.format(
+                    winning_switchers / trials * 100))
+        plt.plot(range(trials), y_axe_stay, label='Erfolgswahrscheinlichkeit beim bleiben: {:0.2f}%'.format(
+                    winning_non_switchers / trials * 100))
+
+        plt.legend(loc='upper right',
+                   prop={'weight': 'bold', 'size': 15},
+                   frameon=True,
+                   fancybox=True,
+                   shadow=True,
+                   facecolor='white')  # location of legend upper right (best option)
+
+        plt.ylabel('Erfolgswahrscheinlichkeit in [%]', fontsize=20, fontweight='bold')
+        plt.xlabel('Anzahl Simulationen', fontsize=20, fontweight='bold')
+
+        plt.ylim(0, 60, 5)
+        plt.tick_params(labelsize=15)
+    plt.grid(True)
     plt.show()
 
 
