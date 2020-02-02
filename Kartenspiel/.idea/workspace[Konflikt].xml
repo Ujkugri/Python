@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e300e871-6fa5-4ab3-ab6c-63304c776bf0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Kartenspiel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stoppziehzahl/Test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wuerfelspiel/.idea/Wurfelspiel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wuerfelspiel/Stopppunktzahl/.idea/Stopppunktzahl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wuerfelspiel/Stoppwurfzahl/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wuerfelspiel/Stoppwurfzahl/.idea/Stoppwurfzahl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wuerfelspiel/Stoppwurfzahl/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wuerfelspiel/Stoppwurfzahl/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wuerfelspiel/Stoppwurfzahl/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wuerfelspiel/Stoppwurfzahl/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wuerfelspiel/Stoppwurfzahl/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Montyproblem/Montyproblem.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Montyproblem/Montyproblem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Random_Games/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Random_Games/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secretary/Secretary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Secretary/Secretary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secretary/Secretary_problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Secretary/Secretary_problem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/.idea/Wurfelspiel.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/Wurfelspiel_Punktzahl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/Wurfelspiel_Punktzahl_vergleich.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/Wurfelspiel_Wurfzahl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wurfelspiel/Wurfelspiel_Wurfzahl_vergleich.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Kartenspiel" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../Montyproblem/Montyproblem.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Gentian\Dropbox\Uni\Programm\Python\Kartenspiel\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TOGW8aTDo9z7MNEpckbXAHXnlJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Wuerfelspiel/Stopppunktzahl" />
+    <property name="settings.editor.selected.configurable" value="RSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Kartenspiel_Ziehzahl">
+    <configuration name="Kartenspiel_Erwartung" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kartenspiel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Stoppziehzahl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stoppziehzahl/Kartenspiel_Erwartung.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Kartenspiel_Ziehzahl" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kartenspiel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Stoppziehzahl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stoppziehzahl/Kartenspiel_Ziehzahl.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Kartenspiel_Ziehzahl_Vergleich" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kartenspiel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Stoppziehzahl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stoppziehzahl/Kartenspiel_Ziehzahl_Vergleich.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kartenspiel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Stoppziehzahl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stoppziehzahl/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="music_and_video_downloader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Kartenspiel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ytdownloader" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ytdownloader/music_and_video_downloader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Kartenspiel_Erwartung" />
+      <item itemvalue="Python.Kartenspiel_Ziehzahl" />
+      <item itemvalue="Python.Kartenspiel_Ziehzahl_Vergleich" />
+      <item itemvalue="Python.Test" />
+      <item itemvalue="Python.music_and_video_downloader" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Kartenspiel_Ziehzahl" />
+        <item itemvalue="Python.Test" />
+        <item itemvalue="Python.Kartenspiel_Erwartung" />
+        <item itemvalue="Python.Kartenspiel_Ziehzahl_Vergleich" />
+        <item itemvalue="Python.music_and_video_downloader" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e300e871-6fa5-4ab3-ab6c-63304c776bf0" name="Default Changelist" comment="" />
+      <created>1573323756460</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573323756460</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

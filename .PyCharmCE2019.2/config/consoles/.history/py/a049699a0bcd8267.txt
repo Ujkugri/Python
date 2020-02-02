@@ -1,0 +1,5 @@
+exit()
+-. . -..- - / . -. - .-. -.--
+winner = p.run(eval_genomes)
+-. . -..- - / . -. - .-. -.--
+p = neat.Population(config)

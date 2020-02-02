@@ -1,0 +1,6 @@
+<application>
+  <component name="RSettings">
+    <option name="interpreterPath" value="C:\Program Files\R\R-3.6.0\bin\R.exe" />
+    <option name="resolveInModule" value="true" />
+  </component>
+</application>

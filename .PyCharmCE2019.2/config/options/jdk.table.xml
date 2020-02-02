@@ -1,0 +1,228 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Python 3.7" />
+      <type value="Python SDK" />
+      <version value="Python 3.7.3" />
+      <homePath value="C:\Program Files (x86)\Python37-32\python.exe" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Python37-32/DLLs" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib/site-packages" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharmCE2019.2/system/python_stubs/-1384526572" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (test)" />
+      <type value="Python SDK" />
+      <version value="Python 3.7.3" />
+      <homePath value="C:\Users\Gentian\test\venv\Scripts\python.exe" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Python37-32/DLLs" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32" type="simple" />
+            <root url="file://$USER_HOME$/test/venv" type="simple" />
+            <root url="file://$USER_HOME$/test/venv/Lib/site-packages" type="simple" />
+            <root url="jar://$USER_HOME$/test/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg!/" type="simple" />
+            <root url="file://$USER_HOME$/test/venv/Lib/site-packages/pip-19.0.3-py3.7.egg" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/1931508798" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/test" />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (venv)" />
+      <type value="Python SDK" />
+      <version value="Python 3.7.3" />
+      <homePath value="C:\Users\Gentian\untitled\venv\Scripts\python.exe" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Python37-32/DLLs" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32" type="simple" />
+            <root url="file://$USER_HOME$/untitled/venv" type="simple" />
+            <root url="file://$USER_HOME$/untitled/venv/Lib/site-packages" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib/site-packages" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1125219951" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (Pythoncodes)" />
+      <type value="Python SDK" />
+      <homePath value="C:\Users\Gentian\Dropbox\Uni\Programm\Pythoncodes\venv\Scripts\python.exe" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Python37-32/DLLs" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/venv" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/venv/Lib/site-packages" type="simple" />
+            <root url="jar://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg!/" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/venv/Lib/site-packages/pip-19.0.3-py3.7.egg" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-289880574" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes" />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (vier_gewinnt)" />
+      <type value="Python SDK" />
+      <homePath value="C:\Users\Gentian\Dropbox\Uni\Programm\vier_gewinnt\venv\Scripts\python.exe" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Python37-32/DLLs" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/vier_gewinnt/venv" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/vier_gewinnt/venv/Lib/site-packages" type="simple" />
+            <root url="jar://$USER_HOME$/Dropbox/Uni/Programm/vier_gewinnt/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg!/" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/vier_gewinnt/venv/Lib/site-packages/pip-19.0.3-py3.7.egg" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1382061523" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/Dropbox/Uni/Programm/vier_gewinnt" />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (keylogger)" />
+      <type value="Python SDK" />
+      <homePath value="C:\Users\Gentian\Dropbox\Uni\Programm\keylogger\venv\Scripts\python.exe" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Python37-32/DLLs" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/keylogger/venv" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/keylogger/venv/Lib/site-packages" type="simple" />
+            <root url="jar://$USER_HOME$/Dropbox/Uni/Programm/keylogger/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg!/" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/keylogger/venv/Lib/site-packages/pip-19.0.3-py3.7.egg" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/338471175" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/Dropbox/Uni/Programm/keylogger" />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (Mashine_Learning)" />
+      <type value="Python SDK" />
+      <version value="Python 3.7.3" />
+      <homePath value="C:\Users\Gentian\Dropbox\Uni\Programm\Pythoncodes\Mashine_Learning\venv\Scripts\python.exe" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Python37-32/DLLs" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Mashine_Learning/venv" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Mashine_Learning/venv/Lib/site-packages" type="simple" />
+            <root url="jar://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Mashine_Learning/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg!/" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Mashine_Learning/venv/Lib/site-packages/pip-19.0.3-py3.7.egg" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-653016237" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Mashine_Learning" />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.7 (Course)" />
+      <type value="Python SDK" />
+      <homePath value="C:\Users\Gentian\Dropbox\Uni\Programm\Pythoncodes\Course\venv\Scripts\python.exe" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/Program Files (x86)/Python37-32/DLLs" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32/Lib" type="simple" />
+            <root url="file://C:/Program Files (x86)/Python37-32" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Course/venv" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Course/venv/Lib/site-packages" type="simple" />
+            <root url="jar://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Course/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg!/" type="simple" />
+            <root url="file://$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Course/venv/Lib/site-packages/pip-19.0.3-py3.7.egg" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-734005624" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/Dropbox/Uni/Programm/Pythoncodes/Course" />
+    </jdk>
+  </component>
+</application>
