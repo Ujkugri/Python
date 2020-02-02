@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 
 
 def find_k_opt(N):
+    # N Candidates
     candidates = np.arange(1, N+1)
+    # Shuffle Candidates
     np.random.shuffle(candidates)
 
     # smallest k such that 1/k + 1/(k+1) + ... + 1/(n-1) <= 1
@@ -18,7 +20,11 @@ def find_k_opt(N):
 
 
 if __name__ == '__main__':
+
+    # Important parameters
     N = 100  # Number of Candidates
+    #
+
     sim = np.array([find_k_opt(i) for i in range(1, N+2)])
     opt = np.array([i/np.e for i in range(1, N+2)])
 

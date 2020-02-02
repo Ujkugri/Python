@@ -32,16 +32,21 @@ def choose_candidate(N):
 
 
 if __name__ == '__main__':
+
+    # Important parameters
     N = 100  # Number of Candidates
-    number_of_trials = 10000 * N
+    number_of_trials = 1000 * N
+    #
+
     sim = np.array([choose_candidate(N) for i in range(number_of_trials)])
     expect = np.array(
         [collections.Counter(sim)[i] for i in range(1, N+1)]) * 100 / number_of_trials
+
     with plt.style.context('seaborn'):
         plt.bar(np.arange(len(expect)),
                 height=expect,
                 color='#1b4f72',
-                label='Verteilung der ausgewählten Bewerberinnen')  # Limit for View is at bins=10^4!
+                label='Verteilung der ausgewählten Bewerberinnen')
 
         plt.legend(loc='upper left',
                    prop={'weight': 'bold', 'size': 20},
@@ -50,7 +55,7 @@ if __name__ == '__main__':
                    shadow=True,
                    facecolor='white')  # location of legend upper left (best option)
         plt.title('Es wurde zu {:0.2f}% die beste Bewerberin genommen.'.format(
-            collections.Counter(sim)[N] / (100 * N)),
+            collections.Counter(sim)[N] * 100 / number_of_trials),
             size=20,
             weight='bold')
         plt.tick_params(labelsize=15)
