@@ -7,12 +7,12 @@ def dice(number_of_points):
     result = []
     sum = 0
     while k:
-        die = np.random.randint(1, 7)  # rolls from 1 to 6
+        die = np.random.randint(1, 9)  # rolls from 1 to 6
         sum += die
-        if die == 1 or sum >= number_of_points:
+        if die == 1 or die == 2 or die == 3 or sum >= number_of_points:
             k = False
-            if die == 1:
-                sum -= 20
+            if die == 1 or die == 2 or die == 3:
+                sum = 0
         result.append(die)
 
     result = np.asarray(result)
@@ -23,9 +23,9 @@ def dice(number_of_points):
 if __name__ == '__main__':
     avg = []
     number_of_max_points = 150
-    for n in range(1, number_of_max_points+1):  # Numbering starts at 0 in Python
+    for n in range(1,15):  # Numbering starts at 0 in Python
         number_of_points = n  # Number of Throws
-        number_of_simulation = 1000000  # 10000000 Number of Simulations
+        number_of_simulation = 10000000  # Number of Simulations
         sim = np.array([dice(number_of_points) for i in range(number_of_simulation)])
         average = np.sum(sim)/number_of_simulation
         avg.append(average)
